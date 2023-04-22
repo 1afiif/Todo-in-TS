@@ -18,7 +18,7 @@ export default class FullList implements List {
     get list(): ListItem[] {
         return this._list
     }
-    
+
     load(): void {
         const storedList: string | null = localStorage.getItem('myList')
         if (typeof storedList !== 'string') return
@@ -52,6 +52,4 @@ export default class FullList implements List {
         this._list = this._list.filter(item => item.id !== id)
         this.save() 
     }
-    
-
 }
