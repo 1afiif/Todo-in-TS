@@ -33,6 +33,7 @@ const initApp = (): void => {
 
   fullList.load();
   template.render(fullList);
+  
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
